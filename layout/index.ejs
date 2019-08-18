@@ -1,0 +1,48 @@
+<!-- 主页 -->
+<section id="articleList" style="transform: translate3d(0, 120px, 0);opacity: 0;">
+    <ul>
+        <% page.posts.forEach(function(post,item){ %>
+        <li class="article-li">
+            <a class="jump" href="<%- config.root %><%- post.path %>">
+            <div class="img-wrapper">
+                   <div class="mark"></div>
+                   <% if(page.current === 1 && item === 0) { %>
+                    <div class="wrap">
+                        <span class="silk-ribbon6">最新文章</span>
+                    </div>
+                    <% } %>
+
+<img src='https://cdn-isux.qq.com/upload/covers/331_a_src.jpg' alt="image">
+
+                   <!--  <% if(post.image && post.image.length > 0) { %>
+                       <img src='<%- post.image %>' alt="image">
+                     <% } else if(post.categories && post.categories.length > 0) { %>
+                       
+                     <% } else {%>
+                       <img src="<%- theme.image.default %>" alt="default">
+
+                       <% }%>  -->
+                    
+            </div>
+            <div class="article-content">
+                    <p class="article-title">
+                            <a href="<%- config.root %><%- post.path %>">
+                                <%- post.slug.split("/")[post.slug.split("/").length-1] %></a>
+                            </p>
+                   
+                
+                <a class="article-read" href="<%- config.root %><%- post.path %>">
+                    阅读全文
+                    <div class="article-digest">
+                        <%- post.more.replace(/<\/?.+?\/?>/g, "").substring(0, 70) %>...
+                    </div>
+                </a>
+            </div>
+           </a>
+
+        </li>
+        <% }); %>
+    </ul>
+</section>
+<%- partial('_partial/paginator') %>
+

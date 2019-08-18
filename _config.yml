@@ -1,0 +1,165 @@
+
+
+less:
+  compress: true #是否压缩
+  paths:
+    - source/css/style.less #压缩后的文件路径
+
+# 站点ico图标
+favicon: /img/favicon.ico
+
+# 头像
+avatar: /image/avator.png
+
+# 头像点击后的链接地址
+avatar_link: / #默认为主页
+
+
+
+# 社交媒体
+menu_app: 
+  bilibili: https://www.bilibili.com/
+  github: https://github.com/codefine 
+  zhihu:  https://zhihu.com
+  qq: "148373644"
+  youtube: "https://www.youtube.com"
+
+#主题
+menu:
+  home:
+    text: Home
+    url: /
+    icon: home
+  archives:
+    text: archive
+    url: /archives
+    icon: archives
+  about:
+    text: about
+    url: /about
+    icon: about
+  friends:
+    text: friends
+    url: /friends
+    icon: plus-square
+  search:
+     text: search
+     icon: search
+
+# 进入文章时自动隐藏
+auto_hide: false
+
+
+# 搜索配置
+local_search:
+  enable: true
+  trigger: auto
+  top_n_per_article: 1
+
+
+
+# 首页是否开启置顶标志
+top_icon: true
+
+
+
+# 页面标题
+## 标签页 / 分类页 / 归档页的标题只能在这里设置
+## 其他自定义页面标题在页面markdown文件的title中设置
+tags_title: Tags              #标签页
+categories_title: Categories  #分类页
+archives_title: Archives      #归档页
+
+# 主页文章摘要缩略图
+defaultthumb: true
+
+# 自动生成文章摘要
+## 显示在主页中
+## excerpt_length只在excerpt_render为true时生效。
+## excerpt_render为false时可进行手动截断。方法为在文章的markdown文件中加入<!--more-->，其之前的内容视为摘要部分。
+excerpt_render: false   #自动截断
+excerpt_length: 200     #截断长度
+excerpt_link: more      #更多按钮内容
+
+# 是否显示文章最后更新时间
+## 位于文章底部的copyright
+show_last_updated: true
+
+# 版权信息copyright
+## 位于文章底部
+## hexo中所有变量及辅助函数等均可调用，具体请查阅 hexo.io
+postMessage: 转载注明出处，原文地址：<a href="<%- url_for(page.path).replace(/index\.html$/, "") %>" target="_blank" rel="external"><%- page.permalink.replace(/index\.html$/, "") %></a>
+
+# 打赏
+## 可以在文章markdown中设置reward: false来取消本篇文章的打赏功能
+## 全局取消直接注释下方配置
+reward:
+  title: 我们一起来让这个世界有趣一点
+  wechat: /img/reward-wechat.jpg     #微信
+  alipay: /img/reward-alipay.jpg     #支付宝
+
+
+
+
+#####################
+####   页脚配置    ###
+#####################
+
+# 固定页脚
+footer_fixation: false
+
+# 友情链接
+blogroll:
+  item1:
+    name: HOME
+    url: https://www.lujingtao.com
+  #item2:
+    #name: gitee
+    #url: https://www.gitee.com
+  #item3:
+    #name: coding
+    #url: https://www.coding.net
+
+# 版权起始年份
+since_year: 2019
+
+# icp备案号
+## 例如ICP_license: 京ICP备123456号
+ICP_license: false
+
+
+
+# valine评论系统
+## https://valine.js.org/
+valine:
+  enable: true
+  appid: fGSHbxc61eXC9MgR32tTRLKD-gzGzoHsz
+  appkey: ylVHOgsBL6HOffDYf4H7qzDs
+  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+  verify: false # Verification code
+  placeholder: ヾﾉ≧∀≦)o 来呀！快活呀！~
+  avatar: 'wavatar'  #用户头像
+  guest_info: nick,mail,link # custom comment header
+  pageSize: 10 # pagination size
+
+
+font:
+  enable: true
+  host: fonts.lug.ustc.edu.cn
+
+
+# 封面
+image:
+  default: /image/default.png
+  es6: /image/es6.png
+  js:  /image/js.jpg
+  css: /image/css.png
+  html: /image/html.png
+  web: /image/html.png
+  react: /image/react.png
+  vue: /image/vue.png
+
+
+
+
+

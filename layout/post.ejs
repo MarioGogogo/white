@@ -1,0 +1,42 @@
+<!-- 帖子组件 -->
+<div id="article">
+  <!-- 头部 -->
+  <% if(page.title == "friends"){ %>
+    <div>
+      <%- partial('_partial/friends') %>
+     </div>
+  <% }else if(page.title == "about"){ %>
+    <div>
+      <%- partial('_partial/about') %>
+     </div>
+    <% }else{%>
+      <div class="post-header">
+        <div class="post-title">
+          <span><%- page.title %></span>
+        </div>
+      </div>
+      <!-- TODO：抽成组件提取出 -->
+      <div class="post-label">
+        <div class="post-date labelitem">
+          <span class="iconfont icon-riqi"></span>
+          <%- "发布时间: "+date(page.date, "YYYY-MM-DD") %>
+        </div>
+        <div class="post-fontnum labelitem">
+         <span class="iconfont icon-dictionary"
+        ></span><%- "字数: 365字" %></div>
+        <div class="post-readtime labelitem">
+            <span class="iconfont icon-shijian"></span>
+          <%- "阅读: 1分钟" %></div>
+      </div>
+      <%- page.content %>
+      <div id="post-end">
+          <div class="title">感谢您的阅读🌸 END!!</div>
+      </div>
+      <h3>评论区</h3>
+      <div id="vcomments"></div>
+      <% } %>
+     <!-- TODO：是否要增加404页面 -->
+
+</div>
+
+

@@ -1,0 +1,322 @@
+/* #################### 文章 #################### */
+/* 作者 时间 相关 */
+#post-author {
+  font-size: 9px;
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  color: #999;
+}
+
+#post-date {
+  font-size: 9px;
+  position: absolute;
+  top: 80px;
+  right: 30px;
+  color: #999;
+}
+
+/* 文章各个元素间隔 */
+#article {
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 20px;
+}
+#article * {
+  margin: 30px 0;
+}
+
+#article h1,
+#article h2,
+#article h3,
+#article h4,
+#article h5,
+#article h6 {
+  line-height: 40px;
+  margin: 20px 0 15px;
+}
+
+#article h1 {
+  font-size: 32px;
+  font-weight: 900;
+  // padding-bottom: 10px;
+  // border-bottom: 2px solid rgba(228, 13, 45);
+  // // box-shadow: 0 2px 12px rgba(228, 13, 45);
+}
+
+#article h2 {
+  font-size: 25px;
+  border-left: 3px solid #666;
+  padding-left: 10px;
+}
+
+#article h3 {
+  font-size: 22px;
+}
+
+#article a {
+  color: rgba(228, 13, 45);
+  text-decoration: none;
+}
+
+#article a:hover {
+  border-bottom: 1px solid;
+}
+
+#article h1 a:hover {
+  border-bottom: none;
+}
+
+code {
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px #999;
+}
+
+#article .has-numbering {
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+#article img {
+     max-width: 100%;
+    height: auto;
+    border: 1px solid;
+}
+
+#article pre {
+  font-size: 18px;
+  margin: 20px 0 15px;
+}
+
+
+#article h4{
+  font-size: 2em;
+    color: #00a3cf;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+#article p {
+  // margin: 0 0 10px;
+  line-height: 2;
+  font-size: 1.8rem;
+}
+
+/* 表格处理 */
+#article table {
+  width: 100%;
+  border: 0;
+  margin: 20px 0 50px 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  line-height: 35px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px #999;
+}
+
+#article table th {
+  background: #666;
+  font-weight: 800;
+font-size: 1.8rem;
+  text-align: left;
+  line-height: 35px;
+  color: #fff;
+}
+
+#article table td{
+  font-size: 1.6rem;
+}
+
+#article table tr:nth-child(odd) {
+  background: #f4f4f4;
+}
+
+#article table tr:hover,
+#article table td:hover {
+  background: #9a9b9c;
+  color: #fff;
+
+}
+
+#article table td,
+table th {
+  padding: 5px 20px 5px 20px;
+}
+
+#article table tr:first-child th:first-child {
+  border-top-left-radius: 3px;
+}
+
+#article table tr:first-child th:last-child {
+  border-top-right-radius: 3px;
+}
+
+#article table tr:last-child td:first-child {
+  border-bottom-left-radius: 3px;
+}
+
+#article table tr:last-child td:last-child {
+  border-bottom-right-radius: 3px;
+}
+
+#article blockquote p {
+  border-left: 5px solid #666;
+  background: #fff;
+  text-indent: 2rem;
+  padding: 1rem 0;
+}
+
+/* #################### 高亮显示行号 #################### */
+pre {
+  position: relative;
+  box-shadow: 0 9px 18px #999;
+}
+
+pre .copy {
+  display: none;
+  position: absolute;
+  right: 6px;
+  top: -26px;
+  padding: 2px 4px;
+  text-align: centerl;
+  background-color: red;
+  background: #2196F3;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px #2196F3;
+  color: #fff;
+  cursor: pointer;
+}
+
+pre .point {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  background: red;
+}
+
+pre .point .red {
+  position: absolute;
+  top: -48px;
+  left: 10px;
+  border-radius: 50%;
+  background: #ff5f56;
+  width: 12px;
+  height: 12px;
+}
+
+pre .point .yellow {
+  position: absolute;
+  top: -48px;
+  left: 30px;
+  margin-left: 20px;
+  border-radius: 50%;
+  background: #ade740;
+  width: 12px;
+  height: 12px;
+}
+
+pre .point .green {
+  position: absolute;
+  top: -48px;
+  left: 50px;
+  margin-left: 20px;
+  border-radius: 50%;
+  background: #13ee30;
+  width: 12px;
+  height: 12px;
+}
+
+// 标题
+.post-header,.post-label{
+  text-align: center
+}
+.post-header .post-title {
+  font-size: 32px;
+  font-weight: 900;
+  padding-bottom: 10px;
+  
+}
+
+.post-header .post-title span{
+   padding-bottom: 1rem;
+   border-bottom: 1px solid #666;
+}
+
+// 标签分类
+.post-label,.post-header,.post-label .labelitem  {
+   margin-top:0 !important;
+}
+
+.post-label{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.post-label .labelitem {
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: #666;
+}
+.post-label .labelitem span{
+   font-size: 18px;
+   padding-right: 6px;
+   color: #666;
+}
+
+/* #################### 代码区 #################### */
+pre code{
+  color:#e6e4e4 !important;
+}
+pre code .hljs-comment{
+ color:#f15959 !important; 
+}
+
+#article  p code{
+  font-family: Monaco,Menlo,Consolas,Courier New,monospace;
+    background: #eee;
+    color: #d14;
+    border: 1px solid #d6d6d6;
+    padding: 0 5px;
+    margin: 0 2px;
+    font-size: 90%;
+    white-space: nowrap;
+    text-shadow: 0 1px #fff;
+ 
+    border-radius: .25rem;
+}
+
+
+
+/* #################### 评论区 #################### */
+#post-end{
+  border-top: 2px solid #666;
+  margin: 0 atuo;
+  text-align: center
+}
+#post-end .title{
+    color:#999;
+    font-size: 14px;
+}
+
+#vcomments{
+  background: #f7f7f7;
+}
+#vcomments *{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,310 @@
+/************
+ * 页面样式
+ ************/
+
+/* ==========
+   基本默认值
+   ========== */
+
+html {
+  font-size: 62.5%;
+  color: #222;
+  font-size: 10px;
+  height: 100%;
+}
+
+::selection {
+  background-color: #b3d4fc;
+  text-shadow: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* ==========
+   工具样式
+   ========== */
+/*任何样式在父级元素居中显示*/
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+/*隐藏文本*/
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+/*清除浮动*/
+/*clearfix:before 上下距离的叠加*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+/*清除浮动*/
+.clearfix:after {
+  clear: both;
+}
+
+/* ===============
+   浏览器更新提示
+   =============== */
+
+.browserupgrade {
+  margin: 0;
+  padding: 1rem;
+  background: #ccc;
+}
+
+/* ===============
+   自定义页面样式
+   =============== */
+
+body {
+  font-size: 1.2rem;   /*12px*/
+  line-height: 1.5;
+  background-color: #f7f7f7;
+  height: 100%;
+
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: #222;
+}
+
+#main {
+  width: 100%;
+  min-height: 100%;
+  padding-bottom: 13rem;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; /* Firefox */
+  -webkit-box-sizing: border-box; /* Safari */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 144rem;
+  padding-top: 12rem;
+ 
+}
+
+
+
+
+
+
+#nprogress .bar {
+  background: #666 !important;
+  position: fixed;
+  z-index: 9999 !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px !important;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #4e4d4d, 0 0 5px #4e4d4d !important;
+}
+#nprogress .spinner {
+  display: none !important;
+}
+
+@import "_partial/nav.less";
+@import "_partial/content.less";
+@import "_partial/paginator.less";
+@import "_partial/search.less";
+@import "_partial/post.less";
+@import "_partial/archive.less";
+@import "_partial/footer.less";
+@import "_partial/media.less";
+@import "_partial/totop.less";
+@import "_partial/friends.less";
+
+/* ==========
+   字体样式
+   ========== */
+
+// @charset "UTF-8";
+
+@font-face {
+  font-family: "Comic Neue";
+  src: url("../fonts/ComicNeue-Light.eot");
+  src: url("../fonts/ComicNeue-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/ComicNeue-Light.woff2") format("woff2"),
+    url("../fonts/ComicNeue-Light.woff") format("woff"),
+    url("../fonts/ComicNeue-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Comic Neue";
+  src: url("../fonts/ComicNeue-Light-Oblique.eot");
+  src: url("../fonts/ComicNeue-Light-Oblique.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/ComicNeue-Light-Oblique.woff2") format("woff2"),
+    url("../fonts/ComicNeue-Light-Oblique.woff") format("woff"),
+    url("../fonts/ComicNeue-Light-Oblique.ttf") format("truetype");
+  font-weight: 300;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: "Comic Neue";
+  src: url("../fonts/ComicNeue-Regular.eot");
+  src: url("../fonts/ComicNeue-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/ComicNeue-Regular.woff2") format("woff2"),
+    url("../fonts/ComicNeue-Regular.woff") format("woff"),
+    url("../fonts/ComicNeue-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Comic Neue";
+  src: url("../fonts/ComicNeue-Regular-Oblique.eot");
+  src: url("../fonts/ComicNeue-Regular-Oblique.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/ComicNeue-Regular-Oblique.woff2") format("woff2"),
+    url("../fonts/ComicNeue-Regular-Oblique.woff") format("woff"),
+    url("../fonts/ComicNeue-Regular-Oblique.ttf") format("truetype");
+  font-weight: 400;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: "ComicNeue-Bold";
+  src: url("../fonts/ComicNeue-Bold.eot");
+  src: url("../fonts/ComicNeue-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/ComicNeue-Bold.woff2") format("woff2"),
+    url("../fonts/ComicNeue-Bold.woff") format("woff"),
+    url("../fonts/ComicNeue-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "ComicNeue-Bold-Oblique";
+  src: url("../fonts/ComicNeue-Bold-Oblique.eot");
+  src: url("../fonts/ComicNeue-Bold-Oblique.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/ComicNeue-Bold-Oblique.woff2") format("woff2"),
+    url("../fonts/ComicNeue-Bold-Oblique.woff") format("woff"),
+    url("../fonts/ComicNeue-Bold-Oblique.ttf") format("truetype");
+  font-weight: 700;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: "Comic Neue Angular";
+  src: url("../fonts/ComicNeue-Angular-Light.eot");
+  src: url("../fonts/ComicNeue-Angular-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/ComicNeue-Angular-Light.woff2") format("woff2"),
+    url("../fonts/ComicNeue-Angular-Light.woff") format("woff"),
+    url("../fonts/ComicNeue-Angular-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Comic Neue Angular";
+  src: url("../fonts/ComicNeue-Angular-Light-Oblique.eot");
+  src: url("../fonts/ComicNeue-Angular-Light-Oblique.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/ComicNeue-Angular-Light-Oblique.woff2") format("woff2"),
+    url("../fonts/ComicNeue-Angular-Light-Oblique.woff") format("woff"),
+    url("../fonts/ComicNeue-Angular-Light-Oblique.ttf") format("truetype");
+  font-weight: 300;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: "Comic Neue Angular";
+  src: url("../fonts/ComicNeue-Angular-Regular.eot");
+  src: url("../fonts/ComicNeue-Angular-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/ComicNeue-Angular-Regular.woff2") format("woff2"),
+    url("../fonts/ComicNeue-Angular-Regular.woff") format("woff"),
+    url("../fonts/ComicNeue-Angular-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Comic Neue Angular";
+  src: url("../fonts/ComicNeue-Angular-Regular-Oblique.eot");
+  src: url("../fonts/ComicNeue-Angular-Regular-Oblique.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/ComicNeue-Angular-Regular-Oblique.woff2") format("woff2"),
+    url("../fonts/ComicNeue-Angular-Regular-Oblique.woff") format("woff"),
+    url("../fonts/ComicNeue-Angular-Regular-Oblique.ttf") format("truetype");
+  font-weight: 400;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: "Comic Neue Angular";
+  src: url("../fonts/ComicNeue-Angular-Bold.eot");
+  src: url("../fonts/ComicNeue-Angular-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/ComicNeue-Angular-Bold.woff2") format("woff2"),
+    url("../fonts/ComicNeue-Angular-Bold.woff") format("woff"),
+    url("../fonts/ComicNeue-Angular-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Comic Neue Angular";
+  src: url("../fonts/ComicNeue-Angular-Bold-Oblique.eot");
+  src: url("../fonts/ComicNeue-Angular-Bold-Oblique.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/ComicNeue-Angular-Bold-Oblique.woff2") format("woff2"),
+    url("../fonts/ComicNeue-Angular-Bold-Oblique.woff") format("woff"),
+    url("../fonts/ComicNeue-Angular-Bold-Oblique.ttf") format("truetype");
+  font-weight: 700;
+  font-style: oblique;
+}

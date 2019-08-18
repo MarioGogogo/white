@@ -1,0 +1,78 @@
+/* #################### 分页 #################### */
+.page-nav{
+  position: relative;
+  height: 5rem;
+}
+.page-nav .page-number{
+     display: none;
+}
+.page-nav  .extend.prev{
+    position: absolute;
+    left : 0;
+    top:0;
+
+}
+.page-nav  .extend.next{
+  position: absolute;
+    right: 0;
+    top:0;
+}
+
+
+.page-nav  .extend{
+      color: #333;
+    cursor: pointer;
+    display: block;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin-right: 2em;
+    text-align: center;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%;
+   
+}
+
+.page-nav  .extend:after , .page-nav  .extend:before {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid transparent;
+    bottom: 0;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all 280ms ease-in-out;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+
+.page-nav .extend:hover, .page-nav .extend:active {
+    letter-spacing: 5px;
+    transition: all 150ms linear 0s;
+    text-decoration: none;
+}
+
+
+.page-nav .extend:hover:after, .page-nav .extend:hover:before {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-color: #666;
+    -webkit-transition: width 350ms ease-in-out;
+    transition: width 350ms ease-in-out;
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,99 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 12rem;
+    width: 100%;
+    z-index: 1000;
+    transform: translate3d(0, 0, 0);
+}
+
+.header .header_logo{
+    margin-right:6rem;
+}
+
+.header .header_search{
+    margin-left:6rem;
+}
+
+
+.header .header_logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.header_wrapper {
+    background: #f7f7f7;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    box-sizing: border-box;
+    height: 12rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    justify-content: center;
+    transition: all .8s ease-out, opacity .8s ease-out;
+}
+
+// 导航
+.header_nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+.header_nav ul li {
+    padding: 1rem 2.3rem;
+
+}
+.header_nav ul li a{
+    display: block;
+    position: relative;
+    font-family: 'Comic Neue Angular Bold Oblique';
+
+}
+
+.header_nav ul li a .iconfont{
+     font-size: 1.9rem
+}
+
+
+
+.header_nav ul li a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1.4rem;
+    background: #000;
+    height: 0.2rem;
+    display: block;
+    width: 100%;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: all .2s cubic-bezier(0.18, 0.89, 0.17, 0.88), opacity .15s ease;
+}
+
+.header_nav ul li:first-child a{
+     opacity: 1;
+    transform: scaleX(1);
+}
+.header_nav ul li a:hover{
+        color:#000;
+}
+
+.header_nav ul li a:hover:after {
+
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+
+.header_search:hover{
+    cursor: pointer;
+ }

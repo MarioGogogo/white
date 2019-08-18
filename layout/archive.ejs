@@ -1,0 +1,26 @@
+<!-- 归档 -->
+<section id="archive">
+  <h1>归档</h1>
+      <% if (site.categories.length){ %>
+        <% let arr =[] %>
+        <ul class="post-archive" data-list="<%- site.posts.length %>">
+          <% page.posts.each(function (post) { %>
+          <li class="post-item" >
+            
+              <% if (!arr.includes(date(post.date, "YYYY"))){ %>
+                <%  arr.push(date(post.date, "YYYY"))%>
+                <div class="year"><%= date(post.date, "YYYY")%>年</div>
+                <% } %>
+            <span class="post-date"><%= date(post.date, "MM-DD") %></span>
+            <a class="post-title" href="<%- url_for(post.path) %>"
+              ><%= post.title %></a
+            >
+          </li>
+          <% }) %>
+        </ul>
+      <% } %>
+
+</section>
+
+<%- partial('_partial/paginator') %>
+

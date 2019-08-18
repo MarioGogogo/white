@@ -1,0 +1,50 @@
+<header class="header">
+    <nav class="header_wrapper" style="transform: translate3d(0, -120px, 0)">
+        <div class="header_logo">
+            <img src="/image/logo.jpg" alt="logo">
+        </div>
+        <div class="header_nav">
+            <ul>
+                <!-- 默认第一个 -->
+                <li class="home">
+                    <a href="/">
+                        <span class="iconfont icon-home"></span>
+                        <span>
+                            <%= theme.menu.home.text %></span>
+                    </a>
+                </li>
+                <li class="archives">
+                    <a href="<%- url_for(theme.menu.archives.url) %>">
+                        <span class="iconfont icon-guidang"></span>
+                        <span>
+                            <%= theme.menu.archives.text %></span>
+                    </a>
+                </li>
+                <li class="notes">
+                    <a href="//h5web.cc/bookNotes/">
+                        <span class="iconfont icon-36"></span>
+                        <span>Notes</span>
+                    </a>
+                </li>
+                <li class="about">
+                    <a href="<%- url_for(theme.menu.about.url) %>">
+                        <span class="iconfont icon-guanyuwomen"></span>
+                        <span>
+                            <%= theme.menu.about.text %></span>
+                    </a>
+                </li>
+                <li class="friends">
+                    <a href="<%- url_for(theme.menu.friends.url) %>">
+                        <span class="iconfont icon-friendfavor"></span>
+                        <span>
+                            <%= theme.menu.friends.text %></span>
+                    </a>
+                </li>
+        
+            </ul>
+        </div>
+        <div class="header_search">
+            <span class="iconfont icon-search"></span>
+        </div>
+    </nav>
+</header>
