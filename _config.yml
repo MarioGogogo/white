@@ -150,14 +150,15 @@ font:
 
 # 封面
 image:
-  default: /image/default.png
+  default: /image/js.jpg
   es6: /image/es6.png
   js:  /image/js.jpg
   css: /image/css.png
   html: /image/html.png
   web: /image/html.png
   react: /image/react.png
-  vue: /image/vue.png
+  vue: /image/vue.jpg
+  webpack: /image/webpack.jpg
 
 
 
